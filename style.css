@@ -28,7 +28,21 @@ td {
 td:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
-
+#content, 
+#restart-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  height: 100vh; 
+  flex-direction: column; 
+}
+button {
+    height: 50px;
+    width: 270px;
+    border-radius: 25px;
+    background-color: burlywood;
+    font-size: inherit;
+}
 table {
     border-collapse: collapse;
 }
@@ -46,4 +60,10 @@ table tr:last-child td {
 }
 table tr td:last-child {
     border-right: 0;
+}
+.winner-message {
+    display: block;
+    margin: 20px;
+    font-size: larger;
+    color: beige;
 }
